@@ -9,10 +9,10 @@ COPY ["Ozon.Route256.Practice.CustomerService1.csproj", "src/Ozon.Route256.Pract
 RUN dotnet restore "src/Ozon.Route256.Practice.CustomerService1/Ozon.Route256.Practice.CustomerService1.csproj"
 WORKDIR "/src/Ozon.Route256.Practice.CustomerService1"
 COPY . .
-RUN dotnet build "./Ozon.Route256.Practice.CustomerService1.csproj" -c Release -o /app/build
+RUN dotnet build "Ozon.Route256.Practice.CustomerService1.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "./Ozon.Route256.Practice.CustomerService1.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "Ozon.Route256.Practice.CustomerService1.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app

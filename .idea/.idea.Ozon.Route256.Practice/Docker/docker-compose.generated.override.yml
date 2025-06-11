@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.9"
+services:
+  customer-service:
+    build:
+      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.CustomerService1"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.CustomerService1.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "ozon.route256.practice.customerservice1:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.CustomerService1:/app:rw"
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1:/src:rw"
+    - "C:\\Users\\Administrator\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
