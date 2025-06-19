@@ -5,11 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>Ozon.Route256.Practice.CustomerService</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-    </ItemGroup>
 
     <ItemGroup>
       <Content Include="..\..\.dockerignore">

@@ -2,13 +2,13 @@ version: "3.9"
 
 services:
   
-  customer-service1:
+  customer-service:
     build:
-      context: ./src/Ozon.Route256.Practice.CustomerService1
+      context: ./src/Ozon.Route256.Practice.CustomerService
       dockerfile: Dockerfile
     depends_on:
       - customer-service-db
-    container_name: customer-service1
+    container_name: customer-service
     ports:
       - "5081:8080"
     environment:
@@ -26,6 +26,11 @@ services:
       - "5400:5432"
     volumes:
       - customer-service-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test -d customer-service"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   
   orders-generator-web:
     build:
@@ -33,11 +38,13 @@ services:
       dockerfile: Dockerfile
     container_name: orders-generator-web
     depends_on:
-      - broker-1
-      - broker-2
+      broker-1:
+        condition: service_healthy
+      broker-2:
+        condition: service_healthy
     environment:
       - ROUTE256_ORDER_SOURCE=WebSite
-      - ROUTE256_KAFKA_BROKERS=broker-1:9091
+      - ROUTE256_KAFKA_BROKERS=broker-1:9091,broker-2:9092
       - ROUTE256_ORDER_REQUEST_TOPIC=pre_orders
 
   orders-generator-mobile:
@@ -46,11 +53,13 @@ services:
       dockerfile: Dockerfile
     container_name: orders-generator-mobile
     depends_on:
-      - broker-1
-      - broker-2
+      broker-1:
+        condition: service_healthy
+      broker-2:
+        condition: service_healthy
     environment:
       - ROUTE256_ORDER_SOURCE=Mobile
-      - ROUTE256_KAFKA_BROKERS=broker-1:9091
+      - ROUTE256_KAFKA_BROKERS=broker-1:9091,broker-2:9092
       - ROUTE256_ORDER_REQUEST_TOPIC=pre_orders
 
   orders-generator-api:
@@ -59,11 +68,13 @@ services:
       dockerfile: Dockerfile
     container_name: orders-generator-api
     depends_on:
-      - broker-1
-      - broker-2
+      broker-1:
+        condition: service_healthy
+      broker-2:
+        condition: service_healthy
     environment:
       - ROUTE256_ORDER_SOURCE=Api
-      - ROUTE256_KAFKA_BROKERS=broker-1:9091
+      - ROUTE256_KAFKA_BROKERS=broker-1:9091,broker-2:9092
       - ROUTE256_ORDER_REQUEST_TOPIC=pre_orders
 
   service-discovery:
@@ -89,18 +100,19 @@ services:
     environment:
       ZOOKEEPER_SERVER_ID: '1'
       ZOOKEEPER_CLIENT_PORT: '2181'
-      ZOOKEEPER_SERVERS: 'zookeeper:2888:3888'
-      ZOOKEEPER_PEER_PORT: '2888'
-      ZOOKEEPER_LEADER_PORT: '3888'
-      ZOOKEEPER_INIT_LIMIT: '10'
-      ZOOKEEPER_SYNC_LIMIT: '5'
-      ZOOKEEPER_MAX_CLIENT_CONNS: '5'
+      ZOOKEEPER_TICK_TIME: '2000'
+    healthcheck:
+      test: ["CMD-SHELL", "echo 'ruok' | nc localhost 2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   
   broker-1:
     image: confluentinc/cp-kafka:7.3.2
     container_name: broker-1
     depends_on:
-      - zookeeper
+      zookeeper:
+        condition: service_healthy
     ports:
       - "29091:29091"
     environment:
@@ -112,12 +124,19 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: 'LISTENER_INTERNAL'
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'LISTENER_INTERNAL:PLAINTEXT,LISTENER_LOCAL:PLAINTEXT'
       KAFKA_DEFAULT_REPLICATION_FACTOR: '2'
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: '2'
+    healthcheck:
+      test: ["CMD-SHELL", "kafka-topics --bootstrap-server broker-1:9091 --list"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
   
   broker-2:
     image: confluentinc/cp-kafka:7.3.2
     container_name: broker-2
     depends_on:
-      - zookeeper
+      zookeeper:
+        condition: service_healthy
     ports:
       - "29092:29092"
     environment:
@@ -129,7 +148,13 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: 'LISTENER_INTERNAL'
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'LISTENER_INTERNAL:PLAINTEXT,LISTENER_LOCAL:PLAINTEXT'
       KAFKA_DEFAULT_REPLICATION_FACTOR: '2'
-      
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: '2'
+    healthcheck:
+      test: ["CMD-SHELL", "kafka-topics --bootstrap-server broker-2:9092 --list"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
 volumes:
   customer-service-db:
     name: customer-service-db

@@ -6,16 +6,10 @@ C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.Custo
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\bin\Debug\net8.0\Ozon.Route256.Practice.CustomerService.runtimeconfig.json
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\bin\Debug\net8.0\Ozon.Route256.Practice.CustomerService.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\bin\Debug\net8.0\Ozon.Route256.Practice.CustomerService.pdb
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.csproj.AssemblyReference.cache
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.AssemblyInfoInputs.cache
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.AssemblyInfo.cs
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.sourcelink.json
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\scopedcss\bundle\Ozon.Route256.Practice.CustomerService.styles.css
@@ -28,7 +22,6 @@ C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.Custo
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Ozon.Route256.Practice.CustomerService.props
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Ozon.Route256.Practice.CustomerService.props
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Rou.C380FD0F.Up2Date
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\refint\Ozon.Route256.Practice.CustomerService.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.CustomerService\obj\Debug\net8.0\Ozon.Route256.Practice.CustomerService.pdb

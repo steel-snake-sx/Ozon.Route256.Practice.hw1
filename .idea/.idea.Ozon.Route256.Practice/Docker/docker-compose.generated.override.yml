@@ -3,19 +3,114 @@ version: "3.9"
 services:
   customer-service:
     build:
-      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.CustomerService1"
+      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.CustomerService"
       dockerfile: "Dockerfile"
       target: "base"
     command: []
     entrypoint:
     - "dotnet"
-    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.CustomerService1.dll"
+    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.CustomerService.dll"
     environment:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "ozon.route256.practice.customerservice1:dev"
+    image: "ozon.route256.practice.customerservice:dev"
     ports: []
     volumes:
-    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.CustomerService1:/app:rw"
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.CustomerService:/app:rw"
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1:/src:rw"
+    - "C:\\Users\\Administrator\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
+  logistic-simulator:
+    build:
+      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.LogisticsSimulator"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.LogisticsSimulator.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "ozon.route256.practice.logisticssimulator:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.LogisticsSimulator:/app:rw"
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1:/src:rw"
+    - "C:\\Users\\Administrator\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
+  orders-generator-api:
+    build:
+      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.OrdersGenerator"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.OrdersGenerator.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "ozon.route256.practice.ordersgenerator:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.OrdersGenerator:/app:rw"
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1:/src:rw"
+    - "C:\\Users\\Administrator\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
+  orders-generator-mobile:
+    build:
+      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.OrdersGenerator"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.OrdersGenerator.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "ozon.route256.practice.ordersgenerator:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.OrdersGenerator:/app:rw"
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1:/src:rw"
+    - "C:\\Users\\Administrator\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
+  orders-generator-web:
+    build:
+      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.OrdersGenerator"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.OrdersGenerator.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "ozon.route256.practice.ordersgenerator:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.OrdersGenerator:/app:rw"
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1:/src:rw"
+    - "C:\\Users\\Administrator\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
+  service-discovery:
+    build:
+      context: "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.ServiceDiscovery"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Ozon.Route256.Practice.ServiceDiscovery.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "ozon.route256.practice.servicediscovery:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Administrator\\RiderProjects\\homework-1\\src\\Ozon.Route256.Practice.ServiceDiscovery:/app:rw"
     - "C:\\Users\\Administrator\\RiderProjects\\homework-1:/src:rw"
     - "C:\\Users\\Administrator\\.nuget\\packages:/root/.nuget/packages"
     working_dir: "/app"
