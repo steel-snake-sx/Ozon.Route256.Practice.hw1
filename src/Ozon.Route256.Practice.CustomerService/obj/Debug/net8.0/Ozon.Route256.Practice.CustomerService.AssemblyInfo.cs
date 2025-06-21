@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ozon.Route256.Practice.CustomerService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e02e0a93c969aca8b2f1bd933cf2348852b0d457")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af56bd385a09fab7840b2278603cdb69ce5ff0f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ozon.Route256.Practice.CustomerService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ozon.Route256.Practice.CustomerService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
