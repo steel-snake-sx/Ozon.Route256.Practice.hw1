@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Ozon.Route256.Practice {
+namespace Ozon.Route256.Practice.Gen {
 
   /// <summary>Holder for reflection information generated from Protos/customers.proto</summary>
   public static partial class CustomersReflection {
@@ -48,23 +48,23 @@ namespace Ozon.Route256.Practice {
             "c3BvbnNlEl8KGEdldEN1c3RvbWVyc0ZvckdlbmVyYXRvchIgLkdldEN1c3Rv",
             "bWVyc0ZvckdlbmVyYXRvclJlcXVlc3QaIS5HZXRDdXN0b21lcnNGb3JHZW5l",
             "cmF0b3JSZXNwb25zZRJBCg5DcmVhdGVDdXN0b21lchIWLkNyZWF0ZUN1c3Rv",
-            "bWVyUmVxdWVzdBoXLkNyZWF0ZUN1c3RvbWVyUmVzcG9uc2VCGaoCFk96b24u",
-            "Um91dGUyNTYuUHJhY3RpY2ViBnByb3RvMw=="));
+            "bWVyUmVxdWVzdBoXLkNyZWF0ZUN1c3RvbWVyUmVzcG9uc2VCHaoCGk96b24u",
+            "Um91dGUyNTYuUHJhY3RpY2UuR2VuYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomerByIdRequest), global::Ozon.Route256.Practice.GetCustomerByIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomerByIdResponse), global::Ozon.Route256.Practice.GetCustomerByIdResponse.Parser, new[]{ "Customer" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomersRequest), global::Ozon.Route256.Practice.GetCustomersRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomersResponse), global::Ozon.Route256.Practice.GetCustomersResponse.Parser, new[]{ "Customer" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest), global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse), global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse.Parser, new[]{ "Id", "Address" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.CreateCustomerRequest), global::Ozon.Route256.Practice.CreateCustomerRequest.Parser, new[]{ "Customer" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.CreateCustomerResponse), global::Ozon.Route256.Practice.CreateCustomerResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomerByLastNameRequest), global::Ozon.Route256.Practice.GetCustomerByLastNameRequest.Parser, new[]{ "LastName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.GetCustomerByLastNameResponse), global::Ozon.Route256.Practice.GetCustomerByLastNameResponse.Parser, new[]{ "Customer" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Customer), global::Ozon.Route256.Practice.Customer.Parser, new[]{ "Id", "FirstName", "LastName", "MobileNumber", "Email", "DefaultAddress", "Addressed" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Address), global::Ozon.Route256.Practice.Address.Parser, new[]{ "Region", "City", "Street", "Building", "Apartment", "Latitude", "Longitude" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest), global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse), global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersRequest), global::Ozon.Route256.Practice.Gen.GetCustomersRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersResponse), global::Ozon.Route256.Practice.Gen.GetCustomersResponse.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest), global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse), global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse.Parser, new[]{ "Id", "Address" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.CreateCustomerRequest), global::Ozon.Route256.Practice.Gen.CreateCustomerRequest.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.CreateCustomerResponse), global::Ozon.Route256.Practice.Gen.CreateCustomerResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomerByLastNameRequest), global::Ozon.Route256.Practice.Gen.GetCustomerByLastNameRequest.Parser, new[]{ "LastName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomerByLastNameResponse), global::Ozon.Route256.Practice.Gen.GetCustomerByLastNameResponse.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.Customer), global::Ozon.Route256.Practice.Gen.Customer.Parser, new[]{ "Id", "FirstName", "LastName", "MobileNumber", "Email", "DefaultAddress", "Addressed" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.Address), global::Ozon.Route256.Practice.Gen.Address.Parser, new[]{ "Region", "City", "Street", "Building", "Apartment", "Latitude", "Longitude" }, null, null, null, null)
           }));
     }
     #endregion
@@ -86,7 +86,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -284,7 +284,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -316,10 +316,10 @@ namespace Ozon.Route256.Practice {
 
     /// <summary>Field number for the "customer" field.</summary>
     public const int CustomerFieldNumber = 1;
-    private global::Ozon.Route256.Practice.Customer customer_;
+    private global::Ozon.Route256.Practice.Gen.Customer customer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Ozon.Route256.Practice.Customer Customer {
+    public global::Ozon.Route256.Practice.Gen.Customer Customer {
       get { return customer_; }
       set {
         customer_ = value;
@@ -413,7 +413,7 @@ namespace Ozon.Route256.Practice {
       }
       if (other.customer_ != null) {
         if (customer_ == null) {
-          Customer = new global::Ozon.Route256.Practice.Customer();
+          Customer = new global::Ozon.Route256.Practice.Gen.Customer();
         }
         Customer.MergeFrom(other.Customer);
       }
@@ -438,7 +438,7 @@ namespace Ozon.Route256.Practice {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::Ozon.Route256.Practice.Customer();
+              Customer = new global::Ozon.Route256.Practice.Gen.Customer();
             }
             input.ReadMessage(Customer);
             break;
@@ -464,7 +464,7 @@ namespace Ozon.Route256.Practice {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::Ozon.Route256.Practice.Customer();
+              Customer = new global::Ozon.Route256.Practice.Gen.Customer();
             }
             input.ReadMessage(Customer);
             break;
@@ -491,7 +491,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -652,7 +652,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -684,12 +684,12 @@ namespace Ozon.Route256.Practice {
 
     /// <summary>Field number for the "customer" field.</summary>
     public const int CustomerFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Customer> _repeated_customer_codec
-        = pb::FieldCodec.ForMessage(10, global::Ozon.Route256.Practice.Customer.Parser);
-    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Customer> customer_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Customer>();
+    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Gen.Customer> _repeated_customer_codec
+        = pb::FieldCodec.ForMessage(10, global::Ozon.Route256.Practice.Gen.Customer.Parser);
+    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> customer_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Ozon.Route256.Practice.Customer> Customer {
+    public pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> Customer {
       get { return customer_; }
     }
 
@@ -839,7 +839,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1037,7 +1037,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1082,10 +1082,10 @@ namespace Ozon.Route256.Practice {
 
     /// <summary>Field number for the "address" field.</summary>
     public const int AddressFieldNumber = 6;
-    private global::Ozon.Route256.Practice.Address address_;
+    private global::Ozon.Route256.Practice.Gen.Address address_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Ozon.Route256.Practice.Address Address {
+    public global::Ozon.Route256.Practice.Gen.Address Address {
       get { return address_; }
       set {
         address_ = value;
@@ -1195,7 +1195,7 @@ namespace Ozon.Route256.Practice {
       }
       if (other.address_ != null) {
         if (address_ == null) {
-          Address = new global::Ozon.Route256.Practice.Address();
+          Address = new global::Ozon.Route256.Practice.Gen.Address();
         }
         Address.MergeFrom(other.Address);
       }
@@ -1224,7 +1224,7 @@ namespace Ozon.Route256.Practice {
           }
           case 50: {
             if (address_ == null) {
-              Address = new global::Ozon.Route256.Practice.Address();
+              Address = new global::Ozon.Route256.Practice.Gen.Address();
             }
             input.ReadMessage(Address);
             break;
@@ -1254,7 +1254,7 @@ namespace Ozon.Route256.Practice {
           }
           case 50: {
             if (address_ == null) {
-              Address = new global::Ozon.Route256.Practice.Address();
+              Address = new global::Ozon.Route256.Practice.Gen.Address();
             }
             input.ReadMessage(Address);
             break;
@@ -1281,7 +1281,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1313,10 +1313,10 @@ namespace Ozon.Route256.Practice {
 
     /// <summary>Field number for the "customer" field.</summary>
     public const int CustomerFieldNumber = 1;
-    private global::Ozon.Route256.Practice.Customer customer_;
+    private global::Ozon.Route256.Practice.Gen.Customer customer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Ozon.Route256.Practice.Customer Customer {
+    public global::Ozon.Route256.Practice.Gen.Customer Customer {
       get { return customer_; }
       set {
         customer_ = value;
@@ -1410,7 +1410,7 @@ namespace Ozon.Route256.Practice {
       }
       if (other.customer_ != null) {
         if (customer_ == null) {
-          Customer = new global::Ozon.Route256.Practice.Customer();
+          Customer = new global::Ozon.Route256.Practice.Gen.Customer();
         }
         Customer.MergeFrom(other.Customer);
       }
@@ -1435,7 +1435,7 @@ namespace Ozon.Route256.Practice {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::Ozon.Route256.Practice.Customer();
+              Customer = new global::Ozon.Route256.Practice.Gen.Customer();
             }
             input.ReadMessage(Customer);
             break;
@@ -1461,7 +1461,7 @@ namespace Ozon.Route256.Practice {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::Ozon.Route256.Practice.Customer();
+              Customer = new global::Ozon.Route256.Practice.Gen.Customer();
             }
             input.ReadMessage(Customer);
             break;
@@ -1488,7 +1488,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1649,7 +1649,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1847,7 +1847,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1879,12 +1879,12 @@ namespace Ozon.Route256.Practice {
 
     /// <summary>Field number for the "customer" field.</summary>
     public const int CustomerFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Customer> _repeated_customer_codec
-        = pb::FieldCodec.ForMessage(10, global::Ozon.Route256.Practice.Customer.Parser);
-    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Customer> customer_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Customer>();
+    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Gen.Customer> _repeated_customer_codec
+        = pb::FieldCodec.ForMessage(10, global::Ozon.Route256.Practice.Gen.Customer.Parser);
+    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> customer_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Ozon.Route256.Practice.Customer> Customer {
+    public pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> Customer {
       get { return customer_; }
     }
 
@@ -2034,7 +2034,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2132,10 +2132,10 @@ namespace Ozon.Route256.Practice {
 
     /// <summary>Field number for the "default_address" field.</summary>
     public const int DefaultAddressFieldNumber = 6;
-    private global::Ozon.Route256.Practice.Address defaultAddress_;
+    private global::Ozon.Route256.Practice.Gen.Address defaultAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Ozon.Route256.Practice.Address DefaultAddress {
+    public global::Ozon.Route256.Practice.Gen.Address DefaultAddress {
       get { return defaultAddress_; }
       set {
         defaultAddress_ = value;
@@ -2144,12 +2144,12 @@ namespace Ozon.Route256.Practice {
 
     /// <summary>Field number for the "addressed" field.</summary>
     public const int AddressedFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Address> _repeated_addressed_codec
-        = pb::FieldCodec.ForMessage(58, global::Ozon.Route256.Practice.Address.Parser);
-    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Address> addressed_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Address>();
+    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Gen.Address> _repeated_addressed_codec
+        = pb::FieldCodec.ForMessage(58, global::Ozon.Route256.Practice.Gen.Address.Parser);
+    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Address> addressed_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Address>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Ozon.Route256.Practice.Address> Addressed {
+    public pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Address> Addressed {
       get { return addressed_; }
     }
 
@@ -2325,7 +2325,7 @@ namespace Ozon.Route256.Practice {
       }
       if (other.defaultAddress_ != null) {
         if (defaultAddress_ == null) {
-          DefaultAddress = new global::Ozon.Route256.Practice.Address();
+          DefaultAddress = new global::Ozon.Route256.Practice.Gen.Address();
         }
         DefaultAddress.MergeFrom(other.DefaultAddress);
       }
@@ -2371,7 +2371,7 @@ namespace Ozon.Route256.Practice {
           }
           case 50: {
             if (defaultAddress_ == null) {
-              DefaultAddress = new global::Ozon.Route256.Practice.Address();
+              DefaultAddress = new global::Ozon.Route256.Practice.Gen.Address();
             }
             input.ReadMessage(DefaultAddress);
             break;
@@ -2421,7 +2421,7 @@ namespace Ozon.Route256.Practice {
           }
           case 50: {
             if (defaultAddress_ == null) {
-              DefaultAddress = new global::Ozon.Route256.Practice.Address();
+              DefaultAddress = new global::Ozon.Route256.Practice.Gen.Address();
             }
             input.ReadMessage(DefaultAddress);
             break;
@@ -2452,7 +2452,7 @@ namespace Ozon.Route256.Practice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

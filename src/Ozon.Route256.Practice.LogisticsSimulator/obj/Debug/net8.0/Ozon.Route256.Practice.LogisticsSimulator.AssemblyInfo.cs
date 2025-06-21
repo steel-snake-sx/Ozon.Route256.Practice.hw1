@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ozon.Route256.Practice.LogisticsSimulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af56bd385a09fab7840b2278603cdb69ce5ff0f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be8a63a934bcfe07b52672332c85ac94ec243988")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ozon.Route256.Practice.LogisticsSimulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ozon.Route256.Practice.LogisticsSimulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

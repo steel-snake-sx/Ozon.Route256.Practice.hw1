@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Ozon.Route256.Practice {
+namespace Ozon.Route256.Practice.Gen {
   public static partial class Customers
   {
     static readonly string __ServiceName = "Customers";
@@ -46,24 +46,24 @@ namespace Ozon.Route256.Practice {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.GetCustomerByIdRequest> __Marshaller_GetCustomerByIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.GetCustomerByIdRequest.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest> __Marshaller_GetCustomerByIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.GetCustomerByIdResponse> __Marshaller_GetCustomerByIdResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.GetCustomerByIdResponse.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse> __Marshaller_GetCustomerByIdResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.GetCustomersRequest> __Marshaller_GetCustomersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.GetCustomersRequest.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.GetCustomersRequest> __Marshaller_GetCustomersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.GetCustomersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.GetCustomersResponse> __Marshaller_GetCustomersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.GetCustomersResponse.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.GetCustomersResponse> __Marshaller_GetCustomersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.GetCustomersResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest> __Marshaller_GetCustomersForGeneratorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest> __Marshaller_GetCustomersForGeneratorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse> __Marshaller_GetCustomersForGeneratorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse> __Marshaller_GetCustomersForGeneratorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.CreateCustomerRequest> __Marshaller_CreateCustomerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.CreateCustomerRequest.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.CreateCustomerRequest> __Marshaller_CreateCustomerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.CreateCustomerRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.CreateCustomerResponse> __Marshaller_CreateCustomerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.CreateCustomerResponse.Parser));
+    static readonly grpc::Marshaller<global::Ozon.Route256.Practice.Gen.CreateCustomerResponse> __Marshaller_CreateCustomerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Ozon.Route256.Practice.Gen.CreateCustomerResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Ozon.Route256.Practice.GetCustomerByIdRequest, global::Ozon.Route256.Practice.GetCustomerByIdResponse> __Method_GetCustomerById = new grpc::Method<global::Ozon.Route256.Practice.GetCustomerByIdRequest, global::Ozon.Route256.Practice.GetCustomerByIdResponse>(
+    static readonly grpc::Method<global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest, global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse> __Method_GetCustomerById = new grpc::Method<global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest, global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetCustomerById",
@@ -71,7 +71,7 @@ namespace Ozon.Route256.Practice {
         __Marshaller_GetCustomerByIdResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Ozon.Route256.Practice.GetCustomersRequest, global::Ozon.Route256.Practice.GetCustomersResponse> __Method_GetCustomers = new grpc::Method<global::Ozon.Route256.Practice.GetCustomersRequest, global::Ozon.Route256.Practice.GetCustomersResponse>(
+    static readonly grpc::Method<global::Ozon.Route256.Practice.Gen.GetCustomersRequest, global::Ozon.Route256.Practice.Gen.GetCustomersResponse> __Method_GetCustomers = new grpc::Method<global::Ozon.Route256.Practice.Gen.GetCustomersRequest, global::Ozon.Route256.Practice.Gen.GetCustomersResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetCustomers",
@@ -79,7 +79,7 @@ namespace Ozon.Route256.Practice {
         __Marshaller_GetCustomersResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest, global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse> __Method_GetCustomersForGenerator = new grpc::Method<global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest, global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse>(
+    static readonly grpc::Method<global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest, global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse> __Method_GetCustomersForGenerator = new grpc::Method<global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest, global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetCustomersForGenerator",
@@ -87,7 +87,7 @@ namespace Ozon.Route256.Practice {
         __Marshaller_GetCustomersForGeneratorResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Ozon.Route256.Practice.CreateCustomerRequest, global::Ozon.Route256.Practice.CreateCustomerResponse> __Method_CreateCustomer = new grpc::Method<global::Ozon.Route256.Practice.CreateCustomerRequest, global::Ozon.Route256.Practice.CreateCustomerResponse>(
+    static readonly grpc::Method<global::Ozon.Route256.Practice.Gen.CreateCustomerRequest, global::Ozon.Route256.Practice.Gen.CreateCustomerResponse> __Method_CreateCustomer = new grpc::Method<global::Ozon.Route256.Practice.Gen.CreateCustomerRequest, global::Ozon.Route256.Practice.Gen.CreateCustomerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateCustomer",
@@ -97,7 +97,7 @@ namespace Ozon.Route256.Practice {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Ozon.Route256.Practice.CustomersReflection.Descriptor.Services[0]; }
+      get { return global::Ozon.Route256.Practice.Gen.CustomersReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of Customers</summary>
@@ -105,144 +105,29 @@ namespace Ozon.Route256.Practice {
     public abstract partial class CustomersBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.GetCustomerByIdResponse> GetCustomerById(global::Ozon.Route256.Practice.GetCustomerByIdRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse> GetCustomerById(global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.GetCustomersResponse> GetCustomers(global::Ozon.Route256.Practice.GetCustomersRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.Gen.GetCustomersResponse> GetCustomers(global::Ozon.Route256.Practice.Gen.GetCustomersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse> GetCustomersForGenerator(global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse> GetCustomersForGenerator(global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.CreateCustomerResponse> CreateCustomer(global::Ozon.Route256.Practice.CreateCustomerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Ozon.Route256.Practice.Gen.CreateCustomerResponse> CreateCustomer(global::Ozon.Route256.Practice.Gen.CreateCustomerRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-    }
-
-    /// <summary>Client for Customers</summary>
-    public partial class CustomersClient : grpc::ClientBase<CustomersClient>
-    {
-      /// <summary>Creates a new client for Customers</summary>
-      /// <param name="channel">The channel to use to make remote calls.</param>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public CustomersClient(grpc::ChannelBase channel) : base(channel)
-      {
-      }
-      /// <summary>Creates a new client for Customers that uses a custom <c>CallInvoker</c>.</summary>
-      /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public CustomersClient(grpc::CallInvoker callInvoker) : base(callInvoker)
-      {
-      }
-      /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected CustomersClient() : base()
-      {
-      }
-      /// <summary>Protected constructor to allow creation of configured clients.</summary>
-      /// <param name="configuration">The client configuration.</param>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected CustomersClient(ClientBaseConfiguration configuration) : base(configuration)
-      {
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.GetCustomerByIdResponse GetCustomerById(global::Ozon.Route256.Practice.GetCustomerByIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCustomerById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.GetCustomerByIdResponse GetCustomerById(global::Ozon.Route256.Practice.GetCustomerByIdRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetCustomerById, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.GetCustomerByIdResponse> GetCustomerByIdAsync(global::Ozon.Route256.Practice.GetCustomerByIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCustomerByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.GetCustomerByIdResponse> GetCustomerByIdAsync(global::Ozon.Route256.Practice.GetCustomerByIdRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetCustomerById, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.GetCustomersResponse GetCustomers(global::Ozon.Route256.Practice.GetCustomersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCustomers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.GetCustomersResponse GetCustomers(global::Ozon.Route256.Practice.GetCustomersRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetCustomers, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.GetCustomersResponse> GetCustomersAsync(global::Ozon.Route256.Practice.GetCustomersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCustomersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.GetCustomersResponse> GetCustomersAsync(global::Ozon.Route256.Practice.GetCustomersRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetCustomers, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse GetCustomersForGenerator(global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCustomersForGenerator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse GetCustomersForGenerator(global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetCustomersForGenerator, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse> GetCustomersForGeneratorAsync(global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCustomersForGeneratorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse> GetCustomersForGeneratorAsync(global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetCustomersForGenerator, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.CreateCustomerResponse CreateCustomer(global::Ozon.Route256.Practice.CreateCustomerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateCustomer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Ozon.Route256.Practice.CreateCustomerResponse CreateCustomer(global::Ozon.Route256.Practice.CreateCustomerRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_CreateCustomer, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.CreateCustomerResponse> CreateCustomerAsync(global::Ozon.Route256.Practice.CreateCustomerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateCustomerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Ozon.Route256.Practice.CreateCustomerResponse> CreateCustomerAsync(global::Ozon.Route256.Practice.CreateCustomerRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_CreateCustomer, null, options, request);
-      }
-      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected override CustomersClient NewInstance(ClientBaseConfiguration configuration)
-      {
-        return new CustomersClient(configuration);
-      }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -264,10 +149,10 @@ namespace Ozon.Route256.Practice {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, CustomersBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetCustomerById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.GetCustomerByIdRequest, global::Ozon.Route256.Practice.GetCustomerByIdResponse>(serviceImpl.GetCustomerById));
-      serviceBinder.AddMethod(__Method_GetCustomers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.GetCustomersRequest, global::Ozon.Route256.Practice.GetCustomersResponse>(serviceImpl.GetCustomers));
-      serviceBinder.AddMethod(__Method_GetCustomersForGenerator, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.GetCustomersForGeneratorRequest, global::Ozon.Route256.Practice.GetCustomersForGeneratorResponse>(serviceImpl.GetCustomersForGenerator));
-      serviceBinder.AddMethod(__Method_CreateCustomer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.CreateCustomerRequest, global::Ozon.Route256.Practice.CreateCustomerResponse>(serviceImpl.CreateCustomer));
+      serviceBinder.AddMethod(__Method_GetCustomerById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest, global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse>(serviceImpl.GetCustomerById));
+      serviceBinder.AddMethod(__Method_GetCustomers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.Gen.GetCustomersRequest, global::Ozon.Route256.Practice.Gen.GetCustomersResponse>(serviceImpl.GetCustomers));
+      serviceBinder.AddMethod(__Method_GetCustomersForGenerator, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest, global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse>(serviceImpl.GetCustomersForGenerator));
+      serviceBinder.AddMethod(__Method_CreateCustomer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Ozon.Route256.Practice.Gen.CreateCustomerRequest, global::Ozon.Route256.Practice.Gen.CreateCustomerResponse>(serviceImpl.CreateCustomer));
     }
 
   }
