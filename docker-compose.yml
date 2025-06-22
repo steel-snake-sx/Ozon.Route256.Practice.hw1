@@ -85,6 +85,8 @@ services:
     environment:
       - ROUTE256_DB_STATE=cluster:0-9:db1:1543;cluster:10-19:db2:1543;cluster1:0:db3:1543
       - ROUTE256_UPDATE_TIMEOUT=10
+    ports:
+      - "5500:8080"
   
   logistic-simulator:
     build:
