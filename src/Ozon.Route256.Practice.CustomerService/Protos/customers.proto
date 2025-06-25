@@ -23,7 +23,7 @@ message GetCustomersRequest {
 }
 
 message GetCustomersResponse {
-  repeated Customer customer = 1;
+  repeated Customer customers = 1;
 }
 
 // --- GetCustomersForGenerator ---

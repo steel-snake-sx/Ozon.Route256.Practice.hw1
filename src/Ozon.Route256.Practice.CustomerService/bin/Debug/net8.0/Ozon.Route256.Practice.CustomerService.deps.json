@@ -10,6 +10,7 @@
         "dependencies": {
           "Grpc.AspNetCore": "2.71.0",
           "Grpc.AspNetCore.Server.Reflection": "2.71.0",
+          "Grpc.Net.Client": "2.71.0",
           "Swashbuckle.AspNetCore": "9.0.1"
         },
         "runtime": {

@@ -23,6 +23,20 @@ public class Startup
         services.AddScoped<ICustomerProvider, CustomerProvider>();
         services.AddScoped<IGoodsProvider, GoodsProvider>();
         services.AddScoped<IOrderGenerator, OrderGenerator>();
+        services.AddGrpcClient<Gen.Customers.CustomersClient>(
+            options =>
+            {
+                var url = _configuration.GetValue<string>("ROUTE256_CUSTOMER_ADDRESS");
+
+                if (string.IsNullOrEmpty(url))
+                {
+                    throw new ArgumentException("Требуется указать переменную окружения OUTE256_SD_ADDRESS или она пустая");
+                }
+                
+                options.Address = new Uri(url);
+                
+                // options.Address = new Uri("http://customer-service:8080");
+            });
 
         services.Configure<KafkaSettings>(o =>
         {

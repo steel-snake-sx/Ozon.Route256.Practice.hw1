@@ -22,7 +22,14 @@ public class Startup
         serviceCollection.AddGrpcClient<Gen.SdService.SdServiceClient>( 
             options =>
             {
-                options.Address = new Uri("http://localhost:5500");
+                var url = _configuration.GetValue<string>("ROUTE256_SD_ADDRESS");
+
+                if (string.IsNullOrEmpty(url))
+                {
+                    throw new ArgumentException("Требуется указать переменную окружения OUTE256_SD_ADDRESS или она пустая");
+                }
+                
+                options.Address = new Uri(url);
             });
         
         // Регистрируем фоновую службу для периодического получения данных от SdService.

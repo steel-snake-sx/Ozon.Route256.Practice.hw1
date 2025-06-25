@@ -27,36 +27,36 @@ namespace Ozon.Route256.Practice.Gen {
             "ChZQcm90b3MvY3VzdG9tZXJzLnByb3RvIiQKFkdldEN1c3RvbWVyQnlJZFJl",
             "cXVlc3QSCgoCaWQYASABKAUiNgoXR2V0Q3VzdG9tZXJCeUlkUmVzcG9uc2US",
             "GwoIY3VzdG9tZXIYASABKAsyCS5DdXN0b21lciIVChNHZXRDdXN0b21lcnNS",
-            "ZXF1ZXN0IjMKFEdldEN1c3RvbWVyc1Jlc3BvbnNlEhsKCGN1c3RvbWVyGAEg",
-            "AygLMgkuQ3VzdG9tZXIiLQofR2V0Q3VzdG9tZXJzRm9yR2VuZXJhdG9yUmVx",
-            "dWVzdBIKCgJpZBgBIAEoBSJJCiBHZXRDdXN0b21lcnNGb3JHZW5lcmF0b3JS",
-            "ZXNwb25zZRIKCgJpZBgBIAEoBRIZCgdhZGRyZXNzGAYgASgLMgguQWRkcmVz",
-            "cyI0ChVDcmVhdGVDdXN0b21lclJlcXVlc3QSGwoIY3VzdG9tZXIYASABKAsy",
-            "CS5DdXN0b21lciIYChZDcmVhdGVDdXN0b21lclJlc3BvbnNlIjAKHEdldEN1",
-            "c3RvbWVyQnlMYXN0TmFtZVJlcXVlc3QSEAoIbGFzdE5hbWUYASABKAkiPAod",
-            "R2V0Q3VzdG9tZXJCeUxhc3ROYW1lUmVzcG9uc2USGwoIY3VzdG9tZXIYASAD",
-            "KAsyCS5DdXN0b21lciKjAQoIQ3VzdG9tZXISCgoCaWQYASABKAUSEgoKZmly",
-            "c3RfbmFtZRgCIAEoCRIRCglsYXN0X25hbWUYAyABKAkSFQoNbW9iaWxlX251",
-            "bWJlchgEIAEoCRINCgVlbWFpbBgFIAEoCRIhCg9kZWZhdWx0X2FkZHJlc3MY",
-            "BiABKAsyCC5BZGRyZXNzEhsKCWFkZHJlc3NlZBgHIAMoCzIILkFkZHJlc3Mi",
-            "gQEKB0FkZHJlc3MSDgoGcmVnaW9uGAEgASgJEgwKBGNpdHkYAiABKAkSDgoG",
-            "c3RyZWV0GAMgASgJEhAKCGJ1aWxkaW5nGAQgASgJEhEKCWFwYXJ0bWVudBgF",
-            "IAEoCRIQCghsYXRpdHVkZRgGIAEoARIRCglsb25naXR1ZGUYByABKAEysgIK",
-            "CUN1c3RvbWVycxJECg9HZXRDdXN0b21lckJ5SWQSFy5HZXRDdXN0b21lckJ5",
-            "SWRSZXF1ZXN0GhguR2V0Q3VzdG9tZXJCeUlkUmVzcG9uc2USOwoMR2V0Q3Vz",
-            "dG9tZXJzEhQuR2V0Q3VzdG9tZXJzUmVxdWVzdBoVLkdldEN1c3RvbWVyc1Jl",
-            "c3BvbnNlEl8KGEdldEN1c3RvbWVyc0ZvckdlbmVyYXRvchIgLkdldEN1c3Rv",
-            "bWVyc0ZvckdlbmVyYXRvclJlcXVlc3QaIS5HZXRDdXN0b21lcnNGb3JHZW5l",
-            "cmF0b3JSZXNwb25zZRJBCg5DcmVhdGVDdXN0b21lchIWLkNyZWF0ZUN1c3Rv",
-            "bWVyUmVxdWVzdBoXLkNyZWF0ZUN1c3RvbWVyUmVzcG9uc2VCHaoCGk96b24u",
-            "Um91dGUyNTYuUHJhY3RpY2UuR2VuYgZwcm90bzM="));
+            "ZXF1ZXN0IjQKFEdldEN1c3RvbWVyc1Jlc3BvbnNlEhwKCWN1c3RvbWVycxgB",
+            "IAMoCzIJLkN1c3RvbWVyIi0KH0dldEN1c3RvbWVyc0ZvckdlbmVyYXRvclJl",
+            "cXVlc3QSCgoCaWQYASABKAUiSQogR2V0Q3VzdG9tZXJzRm9yR2VuZXJhdG9y",
+            "UmVzcG9uc2USCgoCaWQYASABKAUSGQoHYWRkcmVzcxgGIAEoCzIILkFkZHJl",
+            "c3MiNAoVQ3JlYXRlQ3VzdG9tZXJSZXF1ZXN0EhsKCGN1c3RvbWVyGAEgASgL",
+            "MgkuQ3VzdG9tZXIiGAoWQ3JlYXRlQ3VzdG9tZXJSZXNwb25zZSIwChxHZXRD",
+            "dXN0b21lckJ5TGFzdE5hbWVSZXF1ZXN0EhAKCGxhc3ROYW1lGAEgASgJIjwK",
+            "HUdldEN1c3RvbWVyQnlMYXN0TmFtZVJlc3BvbnNlEhsKCGN1c3RvbWVyGAEg",
+            "AygLMgkuQ3VzdG9tZXIiowEKCEN1c3RvbWVyEgoKAmlkGAEgASgFEhIKCmZp",
+            "cnN0X25hbWUYAiABKAkSEQoJbGFzdF9uYW1lGAMgASgJEhUKDW1vYmlsZV9u",
+            "dW1iZXIYBCABKAkSDQoFZW1haWwYBSABKAkSIQoPZGVmYXVsdF9hZGRyZXNz",
+            "GAYgASgLMgguQWRkcmVzcxIbCglhZGRyZXNzZWQYByADKAsyCC5BZGRyZXNz",
+            "IoEBCgdBZGRyZXNzEg4KBnJlZ2lvbhgBIAEoCRIMCgRjaXR5GAIgASgJEg4K",
+            "BnN0cmVldBgDIAEoCRIQCghidWlsZGluZxgEIAEoCRIRCglhcGFydG1lbnQY",
+            "BSABKAkSEAoIbGF0aXR1ZGUYBiABKAESEQoJbG9uZ2l0dWRlGAcgASgBMrIC",
+            "CglDdXN0b21lcnMSRAoPR2V0Q3VzdG9tZXJCeUlkEhcuR2V0Q3VzdG9tZXJC",
+            "eUlkUmVxdWVzdBoYLkdldEN1c3RvbWVyQnlJZFJlc3BvbnNlEjsKDEdldEN1",
+            "c3RvbWVycxIULkdldEN1c3RvbWVyc1JlcXVlc3QaFS5HZXRDdXN0b21lcnNS",
+            "ZXNwb25zZRJfChhHZXRDdXN0b21lcnNGb3JHZW5lcmF0b3ISIC5HZXRDdXN0",
+            "b21lcnNGb3JHZW5lcmF0b3JSZXF1ZXN0GiEuR2V0Q3VzdG9tZXJzRm9yR2Vu",
+            "ZXJhdG9yUmVzcG9uc2USQQoOQ3JlYXRlQ3VzdG9tZXISFi5DcmVhdGVDdXN0",
+            "b21lclJlcXVlc3QaFy5DcmVhdGVDdXN0b21lclJlc3BvbnNlQh2qAhpPem9u",
+            "LlJvdXRlMjU2LlByYWN0aWNlLkdlbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest), global::Ozon.Route256.Practice.Gen.GetCustomerByIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse), global::Ozon.Route256.Practice.Gen.GetCustomerByIdResponse.Parser, new[]{ "Customer" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersRequest), global::Ozon.Route256.Practice.Gen.GetCustomersRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersResponse), global::Ozon.Route256.Practice.Gen.GetCustomersResponse.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersResponse), global::Ozon.Route256.Practice.Gen.GetCustomersResponse.Parser, new[]{ "Customers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest), global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse), global::Ozon.Route256.Practice.Gen.GetCustomersForGeneratorResponse.Parser, new[]{ "Id", "Address" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ozon.Route256.Practice.Gen.CreateCustomerRequest), global::Ozon.Route256.Practice.Gen.CreateCustomerRequest.Parser, new[]{ "Customer" }, null, null, null, null),
@@ -672,7 +672,7 @@ namespace Ozon.Route256.Practice.Gen {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetCustomersResponse(GetCustomersResponse other) : this() {
-      customer_ = other.customer_.Clone();
+      customers_ = other.customers_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -682,15 +682,15 @@ namespace Ozon.Route256.Practice.Gen {
       return new GetCustomersResponse(this);
     }
 
-    /// <summary>Field number for the "customer" field.</summary>
-    public const int CustomerFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Gen.Customer> _repeated_customer_codec
+    /// <summary>Field number for the "customers" field.</summary>
+    public const int CustomersFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Ozon.Route256.Practice.Gen.Customer> _repeated_customers_codec
         = pb::FieldCodec.ForMessage(10, global::Ozon.Route256.Practice.Gen.Customer.Parser);
-    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> customer_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer>();
+    private readonly pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> customers_ = new pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> Customer {
-      get { return customer_; }
+    public pbc::RepeatedField<global::Ozon.Route256.Practice.Gen.Customer> Customers {
+      get { return customers_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -708,7 +708,7 @@ namespace Ozon.Route256.Practice.Gen {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!customer_.Equals(other.customer_)) return false;
+      if(!customers_.Equals(other.customers_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -716,7 +716,7 @@ namespace Ozon.Route256.Practice.Gen {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= customer_.GetHashCode();
+      hash ^= customers_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -735,7 +735,7 @@ namespace Ozon.Route256.Practice.Gen {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      customer_.WriteTo(output, _repeated_customer_codec);
+      customers_.WriteTo(output, _repeated_customers_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -746,7 +746,7 @@ namespace Ozon.Route256.Practice.Gen {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      customer_.WriteTo(ref output, _repeated_customer_codec);
+      customers_.WriteTo(ref output, _repeated_customers_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -757,7 +757,7 @@ namespace Ozon.Route256.Practice.Gen {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += customer_.CalculateSize(_repeated_customer_codec);
+      size += customers_.CalculateSize(_repeated_customers_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -770,7 +770,7 @@ namespace Ozon.Route256.Practice.Gen {
       if (other == null) {
         return;
       }
-      customer_.Add(other.customer_);
+      customers_.Add(other.customers_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -791,7 +791,7 @@ namespace Ozon.Route256.Practice.Gen {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            customer_.AddEntriesFrom(input, _repeated_customer_codec);
+            customers_.AddEntriesFrom(input, _repeated_customers_codec);
             break;
           }
         }
@@ -814,7 +814,7 @@ namespace Ozon.Route256.Practice.Gen {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            customer_.AddEntriesFrom(ref input, _repeated_customer_codec);
+            customers_.AddEntriesFrom(ref input, _repeated_customers_codec);
             break;
           }
         }

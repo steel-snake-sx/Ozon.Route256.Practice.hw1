@@ -58,7 +58,19 @@
               "target": "Package",
               "version": "[2.0.2, )"
             },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.31.1, )"
+            },
             "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.71.0, )"
+            },
+            "Grpc.Net.ClientFactory": {
+              "target": "Package",
+              "version": "[2.71.0, )"
+            },
+            "Grpc.Tools": {
               "target": "Package",
               "version": "[2.71.0, )"
             },

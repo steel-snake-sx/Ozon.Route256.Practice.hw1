@@ -1,39 +1,45 @@
-﻿using Bogus;
+﻿using Google.Protobuf.Collections;
+using Ozon.Route256.Practice.Gen;
 
 namespace Ozon.Route256.Practice.OrdersGenerator.Providers.Customers;
 
 public class CustomerProvider: ICustomerProvider
 {
-    private static readonly Faker Faker = new();
-    private static readonly int CustomersCount = 50;
-    private static readonly List<CustomerDto> Customers;
+    private readonly Gen.Customers.CustomersClient _client;
 
-    static CustomerProvider()
+    public CustomerProvider(Gen.Customers.CustomersClient client)
     {
-        Customers = new List<CustomerDto>();
-        for (var i = 0; i < CustomersCount; i++)
-        {
-            Customers.Add(
-                new CustomerDto(
-                    Faker.Random.Long(99999, 9999999),
-                    Faker.Name.FirstName(),
-                    Faker.Name.LastName(),
-                    Enumerable.Range(0, Faker.Random.Int(1, 3))
-                        .Select(_ => 
-                            new AddressDto(
-                                Region: Faker.Address.State(),
-                                City: Faker.Address.City(),
-                                Street: Faker.Address.StreetName(),
-                                Building: Faker.Address.BuildingNumber(),
-                                Apartment: Faker.Random.Int(9, 999).ToString(),
-                                Latitude: Faker.Address.Latitude(),
-                                Longitude: Faker.Address.Longitude()))));
-        }
+        _client = client;
     }
     
-    public Task<CustomerDto> GetRandomCustomer()
+    public async Task<CustomerDto> GetRandomCustomer()
     {
-        return Task.FromResult(
-            Customers[Faker.Random.Int(0, CustomersCount - 1)]);
+        var request = new GetCustomersRequest();
+        
+        var customersResponse = await _client.GetCustomersAsync(request);
+
+        var count = customersResponse.Customers.Count;
+        
+        var randomCustomer = customersResponse.Customers[Random.Shared.Next(count)];
+
+        return new CustomerDto
+        (
+            randomCustomer.Id,
+            randomCustomer.FirstName,
+            randomCustomer.LastName, 
+            ToAddresses(randomCustomer.Addressed)
+        );
+    }
+
+    private static IEnumerable<AddressDto> ToAddresses(RepeatedField<Address> customerAddressed)
+    {
+        return customerAddressed.Select(address => new AddressDto(
+            address.Region, 
+            address.City, 
+            address.Street, 
+            address.Building, 
+            address.Apartment, 
+            address.Latitude,
+            address.Longitude));
     }
 }
