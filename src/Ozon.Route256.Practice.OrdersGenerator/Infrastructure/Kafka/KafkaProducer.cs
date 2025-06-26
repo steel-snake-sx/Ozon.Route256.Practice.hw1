@@ -1,6 +1,6 @@
-﻿using Confluent.Kafka;
+﻿using System.Text.Json;
+using Confluent.Kafka;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 using Ozon.Route256.Practice.OrdersGenerator.Configuration;
 
 namespace Ozon.Route256.Practice.OrdersGenerator.Infrastructure.Kafka;
@@ -32,7 +32,7 @@ public class KafkaProducer: IKafkaProducer, IDisposable
     {
         try
         {
-            var payload = JsonConvert.SerializeObject(value);
+            var payload = JsonSerializer.Serialize(value);
             var message = new Message<long, string>
             {
                 Key = key,
