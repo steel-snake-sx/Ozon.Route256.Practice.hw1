@@ -9,7 +9,6 @@ C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.Order
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.OrdersGenerator\bin\Debug\net8.0\Bogus.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.OrdersGenerator\bin\Debug\net8.0\Confluent.Kafka.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.OrdersGenerator\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.OrdersGenerator\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.OrdersGenerator\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.OrdersGenerator\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Administrator\RiderProjects\homework-1\src\Ozon.Route256.Practice.OrdersGenerator\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

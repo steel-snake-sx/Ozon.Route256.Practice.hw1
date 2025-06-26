@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ozon.Route256.Practice.OrdersGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5435899ca7b08658296b74b9a2f82d9397ad521")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18660ed9121f2323a214c6f101f1243a93ebe2e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ozon.Route256.Practice.OrdersGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ozon.Route256.Practice.OrdersGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
