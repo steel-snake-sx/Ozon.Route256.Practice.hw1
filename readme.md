@@ -9,13 +9,13 @@
 
 | Компонент               | Назначение                                   |
 |-------------------------|----------------------------------------------|
-| `customer-service`      | gRPC-сервис для работы с клиентами          |
-| `orders-generator-*`   | Генераторы заказов (Web, Mobile, API)       |
-| `service-discovery`     | Service Discovery (распределение кластеров) |
-| `logistic-simulator`    | Симулятор логистики                         |
+| `customer-service`      | gRPC-сервис для работы с клиентами           |
+| `orders-generator-*`    | Генераторы заказов (Web, Mobile, API)        |
+| `service-discovery`     | Service Discovery (распределение кластеров)  |
+| `logistic-simulator`    | Симулятор логистики                          |
 | `Kafka (broker-1/2)`    | Очереди сообщений                            |
 | `Zookeeper`             | Координация Kafka-брокеров                   |
-| `PostgreSQL`            | Хранилище данных клиентов                   |
+| `PostgreSQL`            | Хранилище данных клиентов                    |
 
 Все сервисы взаимодействуют через **gRPC** или **Kafka**, используют общие `.proto`-контракты и работают в локальной среде, имитируя продакшн.
 
