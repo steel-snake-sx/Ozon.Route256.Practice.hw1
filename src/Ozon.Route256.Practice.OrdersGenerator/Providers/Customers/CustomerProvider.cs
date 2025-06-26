@@ -3,7 +3,7 @@ using Ozon.Route256.Practice.Gen;
 
 namespace Ozon.Route256.Practice.OrdersGenerator.Providers.Customers;
 
-public class CustomerProvider: ICustomerProvider
+public class CustomerProvider : ICustomerProvider
 {
     private readonly Gen.Customers.CustomersClient _client;
 
@@ -11,35 +11,35 @@ public class CustomerProvider: ICustomerProvider
     {
         _client = client;
     }
-    
+
     public async Task<CustomerDto> GetRandomCustomer()
     {
         var request = new GetCustomersRequest();
-        
+
         var customersResponse = await _client.GetCustomersAsync(request);
 
         var count = customersResponse.Customers.Count;
-        
+
         var randomCustomer = customersResponse.Customers[Random.Shared.Next(count)];
 
         return new CustomerDto
         (
             randomCustomer.Id,
             randomCustomer.FirstName,
-            randomCustomer.LastName, 
-            ToAddresses(randomCustomer.Addressed)
+            randomCustomer.LastName,
+            ToAddress(randomCustomer.DefaultAddress)
         );
     }
 
-    private static IEnumerable<AddressDto> ToAddresses(RepeatedField<Address> customerAddressed)
+    private static AddressDto ToAddress(Address address)
     {
-        return customerAddressed.Select(address => new AddressDto(
-            address.Region, 
-            address.City, 
-            address.Street, 
-            address.Building, 
-            address.Apartment, 
+        return new AddressDto(
+            address.Region,
+            address.City,
+            address.Street,
+            address.Building,
+            address.Apartment,
             address.Latitude,
-            address.Longitude));
+            address.Longitude);
     }
 }

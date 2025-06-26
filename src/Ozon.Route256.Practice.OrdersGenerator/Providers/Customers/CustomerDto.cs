@@ -4,4 +4,4 @@ public record CustomerDto(
     long Id,
     string FirstName,
     string LastName,
-    IEnumerable<AddressDto> Addresses);
+    AddressDto Address);

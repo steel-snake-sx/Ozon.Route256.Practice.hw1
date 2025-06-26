@@ -1,4 +1,5 @@
-﻿using Ozon.Route256.Practice.OrdersGenerator.Configuration;
+﻿using Grpc.Net.ClientFactory;
+using Ozon.Route256.Practice.OrdersGenerator.Configuration;
 using Ozon.Route256.Practice.OrdersGenerator.Generator;
 using Ozon.Route256.Practice.OrdersGenerator.Infrastructure;
 using Ozon.Route256.Practice.OrdersGenerator.Models;
@@ -23,6 +24,7 @@ public class Startup
         services.AddScoped<ICustomerProvider, CustomerProvider>();
         services.AddScoped<IGoodsProvider, GoodsProvider>();
         services.AddScoped<IOrderGenerator, OrderGenerator>();
+        services.AddScoped<LoggingInterceptor>();
         services.AddGrpcClient<Gen.Customers.CustomersClient>(
             options =>
             {
@@ -30,12 +32,17 @@ public class Startup
 
                 if (string.IsNullOrEmpty(url))
                 {
-                    throw new ArgumentException("Требуется указать переменную окружения OUTE256_SD_ADDRESS или она пустая");
+                    throw new ArgumentException("Требуется указать переменную окружения ROUTE256_SD_ADDRESS или она пустая");
                 }
                 
                 options.Address = new Uri(url);
+
+                // все клиенты, которые используют данный канал, будут использовать этот интерсептер(встраивается в запрос(что-то делает с запросом))
                 
-                // options.Address = new Uri("http://customer-service:8080");
+                options.InterceptorRegistrations.Add(
+                    new InterceptorRegistration(
+                        InterceptorScope.Channel,
+                        provider => provider.GetRequiredService<LoggingInterceptor>()));
             });
 
         services.Configure<KafkaSettings>(o =>
